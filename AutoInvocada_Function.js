@@ -15,7 +15,56 @@ os parênteses no final () a invocam imediatamente após a definição.
 })();
 */
 
+//Padrão Básico:
+
 (function() {
     console.log('Esta é uma função autoinvocada.');
   })();
   
+
+/*----------------------------------------------------------------------------------------*/
+
+//Com Argumentos:
+
+(function(nome) {
+  console.log('Olá, ' + nome + '!');
+})('Alice');
+
+/*-----------------------------------------------------------------------------------------*/
+
+//Retornando Valores:
+
+const resultado = (function(a, b) {
+  return a + b;
+})(5, 3);
+
+console.log('Resultado da função autoinvocada:', resultado); // Saída: 8
+
+/*---------------------------------------------------------------------------------------*/
+
+//Usando Arrow Function:
+
+(() => {
+  console.log('Essa é uma função autoinvocada usando uma arrow function.');
+})();
+
+/*---------------------------------------------------------------------------------------*/
+
+//Utilizando o Escopo para Criar Variáveis Privadas:
+
+const contador = (function() {
+  let count = 0;
+
+  return {
+    increment: function() {
+      count++;
+    },
+    getValue: function() {
+      return count;
+    }
+  };
+})();
+
+contador.increment();
+contador.increment();
+console.log('Valor do contador:', contador.getValue()); // Saída: 2
