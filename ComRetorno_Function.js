@@ -10,6 +10,8 @@ function functionComRetorno(){
 console.log(functionComRetorno())
 
 /*---------------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 function multiplicacao(){
     n1= 2
@@ -23,6 +25,10 @@ console.log(multiplicacao())
 let resposta = multiplicacao() //Você pode armazenar em uma variavel o retorno da função também.
 
 console.log(resposta)
+
+/*------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 function parOuImpar(){
     let resultado = ""

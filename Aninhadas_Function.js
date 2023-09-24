@@ -16,6 +16,8 @@ const functionResposta = (...valores)=>{
 
 console.log(functionResposta(10,5,15))
 
+console.log("------------------------------------------------------------------")
+
 
 /*
 Neste exemplo, temos a função externa functionAninhada(), que contém uma função interna chamada somar().
@@ -27,6 +29,8 @@ quando chamamos functionAninhada(). O resultado final, que é a soma dos valores
 
 
 /*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const somar =val=>{
     let res = 0
@@ -43,6 +47,8 @@ const functionAninhada_Dois = (...valores)=>{
 console.log(functionAninhada_Dois(10,5,15))
 
 /*-------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const somar_Dois =val=>{
     let res = 0

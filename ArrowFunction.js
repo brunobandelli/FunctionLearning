@@ -13,6 +13,8 @@ const minhaArrowFunction = (param) => {
 
 //Exemplos:
 /*-----------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const arrowFunction = (v1,v2)=>{
         return v1+v2
@@ -21,16 +23,22 @@ console.log(arrowFunction(7,3))
 
 
 /*----------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const arrowFunction_Nome = n=>{return n}
 console.log(arrowFunction_Nome("Bruno"))
 
 /*----------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const arrowFunction_Numero = n => n+10 // Se não por o return, não precisa por chaves{}, em caso simples assim.
 console.log(arrowFunction_Numero(10))
 
 /*----------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 const arrowFunction_Soma = (v1,v2)=>{
         let res = v1+v2

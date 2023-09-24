@@ -23,6 +23,8 @@ os parênteses no final () a invocam imediatamente após a definição.
   
 
 /*----------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 //Com Argumentos:
 
@@ -31,6 +33,8 @@ os parênteses no final () a invocam imediatamente após a definição.
 })('Alice');
 
 /*-----------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 //Retornando Valores:
 
@@ -41,6 +45,8 @@ const resultado = (function(a, b) {
 console.log('Resultado da função autoinvocada:', resultado); // Saída: 8
 
 /*---------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 //Usando Arrow Function:
 
@@ -49,6 +55,8 @@ console.log('Resultado da função autoinvocada:', resultado); // Saída: 8
 })();
 
 /*---------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 //Utilizando o Escopo para Criar Variáveis Privadas:
 

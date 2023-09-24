@@ -25,6 +25,9 @@ console.log(iteratorCores.next().value)
 console.log(iteratorCores.next().value)
 
 
+console.log("------------------------------------------------------------------")
+
+
 /*
  Neste exemplo, a função functionGeradora retorna um objeto gerador.
  Você pode chamar next() no gerador para obter o próximo valor da sequência.

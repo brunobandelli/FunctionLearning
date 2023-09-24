@@ -26,7 +26,8 @@ function soma(...valores){  //valores é um array. com o spread ele vira um parm
 
 console.log(soma(10,5,2)) //Eu posso passar quantos parametros eu quiser para a declaração da função.
 
-/*--------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
 function somaExemploForOf(...valores){     
     let resp=0

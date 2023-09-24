@@ -13,6 +13,9 @@ functionParametrizada("Bruno") //valor inserido no parametro
 functionParametrizada(2023)    //idem
 functionParametrizada(10.7)    //idem
 
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 //O valor inserido no Parametro vai ir para a função, e será usado no console.log.
 
 
@@ -22,6 +25,9 @@ function soma(n1,n2){
 
 soma(5,2)
 
+
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
 
 function somaParametrosComPadrao(n1=0,n2=5){  //Aqui foi declarado valores padrões para os parametros, caso não recebam valores especificos na chamada da função, então assumirão os valores padrões definidos na declaração da função.
@@ -47,7 +53,8 @@ function somaParametrosPadrao_ComReturn(n1=0, n2=0){
 console.log(somaParametrosPadrao_ComReturn(10,10))
 
 
-/*----------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
 
 const ValorePadrao = 0
@@ -62,7 +69,8 @@ let resultado_soma= somaParametrosPadrao_ComReturnDois(5)
 
 console.log(resultado_soma)
 
-/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
 let valor = 0
 console.log(valor)
@@ -80,7 +88,8 @@ console.log(valor)
 /*
 Note que nesse caso a variavel recebera a soma e sera sempre atualizada.
 */
-/*---------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
 let valor_Dois = 0
 

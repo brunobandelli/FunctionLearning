@@ -10,6 +10,8 @@ let funcaoAnonima = function(v1,v2){
 
 console.log(funcaoAnonima(10,5))
 
+console.log("------------------------------------------------------------------")
+
 /*
  Neste exemplo, funcaoAnonima é uma variável que armazena uma função anônima. 
  A função é definida usando a palavra-chave function seguida por parênteses vazios (ou com parâmetros, 
@@ -28,6 +30,8 @@ const funcaoAnonima_Dois = function(...valores){
 console.log(funcaoAnonima_Dois(10,5))
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 //Função Construtor Anônima
 const funcaoAnonima_FuncaoConstrutor = new Function("v1","v2","return v1+v2") 
@@ -41,6 +45,8 @@ e o ultimo parametro é sempre o corpo da função, a operação da função, oq
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
 /*
 As funções anônimas são frequentemente usadas em situações em que você deseja criar uma função "ad hoc" 

@@ -14,46 +14,52 @@ são executadas após a conclusão de uma operação assíncrona ou de outra fun
 */
 
 function callbackSucesso() {
-    console.log('Operação bem-sucedida!');
+    console.log( 'Callback foi chamado!');
   }
   
   function operacaoAssincrona(callback) {
-    // Simulando uma operação assíncrona
-    setTimeout(callback, 1000);
+    callback()
   }
   
   operacaoAssincrona(callbackSucesso);
 
-  /*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
   function chamada(callback) {
     console.log('Executando chamada...');
-    callback();
+    // Simulando uma operação assíncrona
+    setTimeout(callback, 1000);
   }
   
   function meuCallback() {
-    console.log('Callback foi chamado!');
+    console.log('Operação bem-sucedida! - RESULTADO DA 2° FUNÇÃO, APÓS 1s');
   }
   
   chamada(meuCallback);
   
 
   /*------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
+
 
   function executaOperacao(numero, callback) {
     const resultado = numero * 2;
     callback(resultado);
   }
   
-  function meuCallback(resultado) {
+  function meuCallback_Dois(resultado) {
     console.log('O resultado é:', resultado);
   }
   
-  executaOperacao(5, meuCallback);
+  executaOperacao(5, meuCallback_Dois);
 
   /*----------------------------------------------------------------------------------------------------*/
+console.log("------------------------------------------------------------------")
 
-  function operacaoAssincrona(callback) {
+
+  function operacaoAssincrona_Tres(callback) {
     // Simulando uma operação assíncrona com um atraso de 2 segundos
     setTimeout(function() {
       const resultado = 'Operação concluída!';
@@ -61,12 +67,12 @@ function callbackSucesso() {
     }, 2000);
   }
   
-  function meuCallback(resultado) {
+  function meuCallback_Tres(resultado) {
     console.log('Callback foi chamado com resultado:', resultado);
   }
   
   // Chamando a função principal com o callback
-  operacaoAssincrona(meuCallback);
+  operacaoAssincrona_Tres(meuCallback_Tres);
   
   
 
