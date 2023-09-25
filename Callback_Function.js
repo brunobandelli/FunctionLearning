@@ -17,17 +17,17 @@ function callbackSucesso() {
     console.log( 'Callback foi chamado!');
   }
   
-  function operacaoAssincrona(callback) {
+  function executaOperacao(callback) {
     callback()
   }
   
-  operacaoAssincrona(callbackSucesso);
+  executaOperacao(callbackSucesso);
 
 /*------------------------------------------------------------------------------------------------*/
 console.log("------------------------------------------------------------------")
 
 
-  function chamada(callback) {
+  function operacaoAssincrona(callback) {
     console.log('Executando chamada...');
     // Simulando uma operação assíncrona
     setTimeout(callback, 1000);
@@ -37,14 +37,14 @@ console.log("------------------------------------------------------------------"
     console.log('Operação bem-sucedida! - RESULTADO DA 2° FUNÇÃO, APÓS 1s');
   }
   
-  chamada(meuCallback);
+  operacaoAssincrona(meuCallback);
   
 
   /*------------------------------------------------------------------------------------------------*/
 console.log("------------------------------------------------------------------")
 
 
-  function executaOperacao(numero, callback) {
+  function executaOperacao_Dois(numero, callback) {
     const resultado = numero * 2;
     callback(resultado);
   }
@@ -53,13 +53,13 @@ console.log("------------------------------------------------------------------"
     console.log('O resultado é:', resultado);
   }
   
-  executaOperacao(5, meuCallback_Dois);
+  executaOperacao_Dois(5, meuCallback_Dois);
 
   /*----------------------------------------------------------------------------------------------------*/
 console.log("------------------------------------------------------------------")
 
 
-  function operacaoAssincrona_Tres(callback) {
+  function operacaoAssincrona_Dois(callback) {
     // Simulando uma operação assíncrona com um atraso de 2 segundos
     setTimeout(function() {
       const resultado = 'Operação concluída!';
@@ -72,7 +72,7 @@ console.log("------------------------------------------------------------------"
   }
   
   // Chamando a função principal com o callback
-  operacaoAssincrona_Tres(meuCallback_Tres);
+  operacaoAssincrona_Dois(meuCallback_Tres);
   
   
 
